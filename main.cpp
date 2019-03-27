@@ -508,22 +508,6 @@ public:
 
 };
 
-
-
-Longint fact(const Longint &N) {
-    Longint res = 1;
-    if (N == 0)
-        return res = 1;
-    for (Longint i(1); i <= N; i = i + 1) {
-        res = res * i;
-    }
-    return res;
-}
-
-Longint comb(Longint &N, Longint &K) {
-    return fact(N) / (fact(K) * fact(N - K));
-}
-
 int main() {
     Longint a=1;
 
